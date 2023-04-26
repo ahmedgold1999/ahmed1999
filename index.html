@@ -1,28 +1,81 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>صفحة HTML بسيطة</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-      }
-      h1 {
-        color: #333333;
-        text-align: center;
-      }
-      p {
-        color: #666666;
-        font-size: 18px;
-        line-height: 1.5;
-        margin-bottom: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>مرحبًا بك في صفحة HTML بسيطة</h1>
-    <p>هذه الصفحة تم إنشاؤها باستخدام HTML و CSS</p>
-    <img src="https://www.example.com/image.jpg" alt="صورة">
-    <a href="https://www.example.com">رابط الموقع الخارجي</a>
-  </body>
-</html>
+<head>
+	<title>معلومات الموظفين</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		form {
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0,0,0,0.2);
+			max-width: 600px;
+			margin: 20px auto;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+		}
+		label {
+			display: block;
+			margin-bottom: 8px;
+			color: #666;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		input[type="text"], input[type="email"], input[type="tel"], input[type="number"], select, textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			background-color: #f9f9f9;
+			font-size: 16px;
+			color: #666;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+			box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 18px;
+			transition: background-color 0.3s ease;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>معلومات الموظفين</h1>
+		<label for="name">الاسم:</label>
+		<input type="text" id="name" name="name">
+
+		<label for="email">البريد الإلكتروني:</label>
+		<input type="email" id="email" name="email">
+
+		<label for="phone">رقم الهاتف:</label>
+		<input type="tel" id="phone" name="phone">
+
+		<label for="position">المنصب الوظيفي:</label>
+		<input type="text" id="position" name="position">
+
+		<label for="department">القسم:</label>
+		<input type="text" id="department" name="department">
+
+		<label for="date-of-joining">تاريخ الانضمام:</label>
+		<input type="date" id="date-of-joining" name="date-of-joining">
+
+		<label for="salary">الراتب:</label>
+		<input type="number" id="salary" name="salary">
+
+		<label for="notes">ملاحظات:</label>
