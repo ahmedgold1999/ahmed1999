@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Employee Form</title>
-    <script src="https://unpkg.com/flutter@latest/build/web/flutter_web.js"></script>
-    <script src="main.dart.js"></script>
+    <title>صفحة HTML بسيطة</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+      }
+      h1 {
+        color: #333333;
+        text-align: center;
+      }
+      p {
+        color: #666666;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+    </style>
   </head>
   <body>
-    <div id="flutter-container"></div>
-    <script>
-      flutterEmbedding = new FlutterWebWidget.Embedder('flutter-container', {
-        initialRoute: '/',
-        routes: {
-          '/': (_) => new FlutterWebWidget.WidgetApp(
-            home: new EmployeeForm(),
-          ),
-        },
-      });
-    </script>
+    <h1>مرحبًا بك في صفحة HTML بسيطة</h1>
+    <p>هذه الصفحة تم إنشاؤها باستخدام HTML و CSS</p>
+    <img src="https://www.example.com/image.jpg" alt="صورة">
+    <a href="https://www.example.com">رابط الموقع الخارجي</a>
   </body>
 </html>
